@@ -1,0 +1,427 @@
+:root{
+  --a:0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  height: 100%;
+
+}
+
+
+.left {
+  width: 25vw;
+  margin: 7px;
+  border-radius: 8px;
+  position: relative;
+  max-height: 110vh;
+
+}
+
+
+.right {
+  width: 75vw;
+  margin: 7px;
+
+  border-radius: 8px;
+max-height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  gap: 13px;
+  filter: invert(1);
+}
+
+
+
+.library {
+  height: 80vh;
+  padding: 6px;
+  filter: invert(1);
+
+}
+
+.foot {
+
+
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.bar {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.sea {
+  padding-left: 4px;
+}
+
+.search-box {
+  border-radius: 6px;
+}
+
+nav button {
+  border-radius: 20px;
+  padding: 4px;
+
+}
+
+.search-box {
+  position: relative;
+  width: 300px;
+
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.search-box button {
+  position: absolute;
+  right: -40px;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box button img {
+  width: 20px;
+  height: 20px;
+}
+
+.home {
+  padding-right: 80px;
+  cursor: pointer;
+}
+
+.logo {
+  cursor: pointer;
+  gap: 5px;
+}
+
+.add-but {
+  display: flex;
+  padding-left: 289px;
+  margin: -17px;
+  cursor: pointer;
+
+}
+
+.library p {
+  margin-top: 16px;
+
+
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.btn {
+  margin-left: 590px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: darkblue;
+  transform: scale(1.1);
+}
+
+.btn-2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-2:hover {
+  background-color: rgb(126, 126, 146);
+  transform: scale(1.1);
+}
+
+.effect:hover {
+  background-color: rgb(126, 126, 146);
+  transform: scale(1.1);
+}
+
+.spotify {
+  color: #fff;
+  padding: 16px;
+
+}
+
+.spotify h1 {
+
+  cursor: pointer;
+  padding-top: 1px;
+}
+
+.spotify-card {
+  width: 180px;
+    height: 280px;
+    border-radius: 16px;
+    background-color: #111;
+    color: white;
+    padding: 16px;
+    margin: 8px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+    overflow: hidden;
+    box-shadow: 20px 16px 8px rgb(0 0 0 / 30%);
+    cursor: pointer;
+}
+
+
+  .spotify-card:hover {
+  background-color: #282828;
+  transform: scale(1.02);
+  --a:1;
+}
+
+
+.spotify-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.spotify-card h3 {
+  font-size: 1rem;
+  margin: 8px 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spotify-card p {
+  font-size: 0.875rem;
+  color: #aaa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.play {
+  width: 48px;
+  height: 48px;
+  background-color: #1db954;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin-top: 200px;
+  position: absolute;
+  right: 22px;
+  opacity: var(--a);
+
+
+}
+
+.play:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.play svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+
+}
+
+.foot p {
+  filter: invert(1);
+  padding: 34px 0;
+  color: rgb(255, 254, 254);
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.tr {
+  filter: invert(1);
+
+}
+
+
+.tr2 {
+  filter: invert();
+
+}
+
+.foot button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  gap: 2px;
+  align-items: center;
+  display: flex;
+  margin-top: 95px;
+  position: absolute;
+}
+
+.playbar {
+  position: fixed;
+  bottom: 10px;
+  background-color: rgb(114, 111, 111);
+  width: 67vw;
+  height: 40px;
+  padding: 12px;
+  border-radius: 3px;
+
+}
+
+.playbtn {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  cursor: pointer;
+}
+
+.song-list {
+  overflow: auto;
+  height: 346px;
+}
+
+.song-list ul {
+  padding: 0 35px;
+  margin-top: 0 12px;
+
+}
+
+.song-list ul li {
+  list-style: none;
+  gap: 34px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 0;
+  border: 3px solid rgb(250, 248, 248);
+  margin: 12px 0;
+  justify-content: space-between;
+
+}
+
+.song-list .info {
+
+  font-size: 13px;
+  width: 344px;
+}
+
+.play2 {
+  display: flex;
+}
+
+.seekbar {
+  border: 2px solid rgb(255, 255, 255);
+  position: absolute;
+  border-radius: 10px;
+  bottom: 5px;
+  height: 2px;
+  width: 97%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  bottom: -5px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  left:-1%;
+}
+.abovebar{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .track-section,
+  .player-controls,
+  .progress-section {
+    flex: 1 1 100%;
+    margin: 5px 0;
+  }
+
+  .playbar {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .track-section img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.tvolume{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
+}
+.range input {
+  cursor: pointer;
+}
+
+
+.bar a{
+  text-decoration: none;
+}

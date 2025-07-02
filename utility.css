@@ -1,0 +1,22 @@
+.border{
+    border: 2px solid rgb(20, 2, 2) ;
+    margin: 3px;
+}
+.flex{
+    display: flex;
+}
+.justify-centre{
+    justify-content: center;
+}
+.items-align{
+    align-items: center;
+}
+.bg-grey{
+    background-color: #292828;
+}
+.bg-black{
+    background-color: black;
+}
+.m-t{
+    margin-top: 6px;
+}
