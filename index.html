@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+</head>
+
+<body>
+    <div class="head bg-black">
+        <div class="bar">
+            <nav>
+
+                <a href="index.html">
+                    <img class="logo" src="logo.svg" alt="" width="26px">
+                </a>
+                <a href="/index.html">
+                    <img class="home" src="home.svg" alt="" width="26px">
+                </a>
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." data-search>
+                    <button>
+                        <img class="sea" src="search.svg" alt="" width="26px">
+                    </button>
+                </div>
+
+                <div class="auth-buttons">
+                    <button class="btn effect">Sign In</button>
+                    <button class="effect">Sign Up</button>
+                </div>
+
+
+            </nav>
+        </div>
+
+        <div class="container flex bg-black">
+
+
+            <div class="left  bg-grey">
+
+                <div class="library ">
+                    <h2>Your library</h2>
+                    <img class="add-but " src="add.svg" alt="" width="22px">
+
+                    <p>It's easy to create with</p>
+                    <button class="btn-2 effect">
+                        Create Playlist
+                    </button>
+
+
+                    <div class="song-list">
+
+                        <ul>
+
+
+                        </ul>
+                    </div>
+                    <div class="foot">
+                        <p>Legal Safety & Privacy Privacy Policy Cookies Accesibility</p>
+
+                        <button class="tr "> <img class="tr2" src="translate.svg" alt="" width="22px"> English</button>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="right bg-grey spotify">
+                <div class="album">
+
+                    <div class="bands">
+                        <h1>Top Bands</h1>
+
+                        <div data-folder="bts" class="spotify-card">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+
+                            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jyyaq6v8e9fa6p7cn7cds13t%2F1751217155_img_1.webp?st=2025-06-29T15%3A58%3A47Z&se=2025-07-05T16%3A58%3A47Z&sks=b&skt=2025-06-29T15%3A58%3A47Z&ske=2025-07-05T16%3A58%3A47Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=YwlBD0Z4ZZ4b0VoKryDeD8FDvQq%2BLL9RsYIdjvGsOoU%3D&az=oaivgprodscus"
+                                alt="Album Cover">
+
+                        </div>
+                        <div data-folder="Coke" class="spotify-card">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jz0aej2nebvvw0efxsd4jxcd%2F1751283951_img_1.webp?st=2025-06-30T10%3A19%3A35Z&se=2025-07-06T11%3A19%3A35Z&sks=b&skt=2025-06-30T10%3A19%3A35Z&ske=2025-07-06T11%3A19%3A35Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=hWsbVEvpkVEbe9abUwQFxxzaYaBrfdBNLhSk6EwBb78%3D&az=oaivgprodscus"
+                                alt="Album Cover">
+
+                        </div>
+
+                        <div data-folder="AUR" class="spotify-card invert">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jz0eqkqxepxbbbvmq0gpcaqh%2F1751288498_img_1.webp?st=2025-06-30T11%3A14%3A12Z&se=2025-07-06T12%3A14%3A12Z&sks=b&skt=2025-06-30T11%3A14%3A12Z&ske=2025-07-06T12%3A14%3A12Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=QQdMbXedE3nPRM%2FrSm84iuR9aRn5ADfQ%2BX6CnbGBzf4%3D&az=oaivgprodscus"
+                                alt="Album Cover">
+
+                        </div>
+                        <div data-folder="onedirection" class="spotify-card">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jz0bsv92enmvw635cdm59fjc%2F1751285399_img_1.webp?st=2025-06-30T10%3A19%3A09Z&se=2025-07-06T11%3A19%3A09Z&sks=b&skt=2025-06-30T10%3A19%3A09Z&ske=2025-07-06T11%3A19%3A09Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=xxVL7jbPJEnRvzBp1gBs71hw4U3bdzIGEDiJP3wFPP4%3D&az=oaivgprodscus"
+                                alt="Album Cover">
+
+                        </div>
+                        <div data-folder="straykids" class="spotify-card">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jz0djet8ekar1tpa804b0jrk%2F1751287252_img_1.webp?st=2025-06-30T11%3A14%3A12Z&se=2025-07-06T12%3A14%3A12Z&sks=b&skt=2025-06-30T11%3A14%3A12Z&ske=2025-07-06T12%3A14%3A12Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=e0Q6uDbzNuXvWBvbf3HAqEX5gMBxHhSuwU20rPhQZLY%3D&az=oaivgprodscus"
+                                alt="Album Cover">
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="solo">
+                        <h1>Solo's</h1>
+                        <div data-folder="Jin" class="spotify-card">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jz0bf4bpf0787tdhasyhja0g%2F1751285079_img_0.webp?st=2025-06-30T10%3A19%3A33Z&se=2025-07-06T11%3A19%3A33Z&sks=b&skt=2025-06-30T10%3A19%3A33Z&ske=2025-07-06T11%3A19%3A33Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=AO4hde3yVtTKD3PQ%2B%2FLIlO%2FOPKdTi2rM%2FZ44Awlytbc%3D&az=oaivgprodscus"
+                                alt="Album Cover">
+
+                        </div>
+                        <div data-folder="jk" class="spotify-card">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jz0ddnf8e8rt0y07gynkx36r%2F1751287078_img_0.webp?st=2025-06-30T11%3A14%3A15Z&se=2025-07-06T12%3A14%3A15Z&sks=b&skt=2025-06-30T11%3A14%3A15Z&ske=2025-07-06T12%3A14%3A15Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=58EgTsNcSsFRVFYk7sMRcljTjAkrYtTHsIhsUv3d1H8%3D&az=oaivgprodscus"
+                                alt="Album Cover">
+
+                        </div>
+                        <div data-folder="jennie" class="spotify-card">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jz0ajgkxfcmrhemdrmqnpy4r%2F1751284087_img_1.webp?st=2025-06-30T10%3A19%3A55Z&se=2025-07-06T11%3A19%3A55Z&sks=b&skt=2025-06-30T10%3A19%3A55Z&ske=2025-07-06T11%3A19%3A55Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=JZ4BgO0JZAJ5OoZ3PtYDLSlUFQcHG6R7RnPprzxB8cg%3D&az=oaivgprodscus"
+                                alt="Album Cover">
+
+                        </div>
+                        <div data-folder="Jimin" class="spotify-card">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jz09svyredz86xhh0tv4x77c%2F1751283453_img_1.webp?st=2025-06-30T10%3A19%3A09Z&se=2025-07-06T11%3A19%3A09Z&sks=b&skt=2025-06-30T10%3A19%3A09Z&ske=2025-07-06T11%3A19%3A09Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=wtiC2MB4pIotS89fueAxwtik9JJkc6BlLMhvcecsBBc%3D&az=oaivgprodscus"
+                                </div>
+
+
+
+
+                        </div>
+
+
+                        <div data-folder="iu" class="spotify-card">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jz0ckgpdfajb5p2kxnj1hxmk%2F1751286224_img_1.webp?st=2025-06-30T11%3A14%3A15Z&se=2025-07-06T12%3A14%3A15Z&sks=b&skt=2025-06-30T11%3A14%3A15Z&ske=2025-07-06T12%3A14%3A15Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=zANAxc9rQ4t1%2FTFdfB5NQJiYH5QrqfYD4gDdW%2FyY5Eo%3D&az=oaivgprodscus"
+                                alt="Album Cover">
+
+                        </div>
+                        <div data-folder="diljit" class="spotify-card">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <img
+                                src="https://videos.openai.com/vg-assets/assets%2Ftask_01jz0dzps0fa4a9k8x0c1n0pft%2F1751287716_img_0.webp?st=2025-06-30T11%3A14%3A12Z&se=2025-07-06T12%3A14%3A12Z&sks=b&skt=2025-06-30T11%3A14%3A12Z&ske=2025-07-06T12%3A14%3A12Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=nIUoAWLG7cHHlhjPQYEGzy70mn%2FZ%2BhSb6NVy%2BxsNre8%3D&az=oaivgprodscus">
+                        </div>
+
+
+
+                        <div class="lang">
+                            <h1>Top Hits By Language and Region</h1>
+
+
+
+
+
+                            <div data-folder="english" class="spotify-card">
+                                <div class="play">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                            fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jyxtv34pe3tafdbp1p8bc34m%2F1751200519_img_1.webp?st=2025-06-29T11%3A23%3A46Z&se=2025-07-05T12%3A23%3A46Z&sks=b&skt=2025-06-29T11%3A23%3A46Z&ske=2025-07-05T12%3A23%3A46Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=DaisMrRMGrvRt1jtWFQZfTZkFv7DvKUubzK5y%2Fa1kHU%3D&az=oaivgprodscus"
+                                    alt="Album Cover">
+
+                            </div>
+
+                            <div data-folder="pakistani" class="spotify-card">
+                                <div class="play">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                            fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jyyb0beqe1xrqrqx9gy4ry3c%2F1751217600_img_0.webp?st=2025-06-29T15%3A58%3A47Z&se=2025-07-05T16%3A58%3A47Z&sks=b&skt=2025-06-29T15%3A58%3A47Z&ske=2025-07-05T16%3A58%3A47Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=6qyGOZyYAaQtxlpzmGn6dHPhnKiuIS%2FrEWqpFtjJnHo%3D&az=oaivgprodscus"
+                                    alt="Album Cover">
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+                        <div class="msolo">
+                            <h1>Other Top Solos</h1>
+
+                            <div data-folder="solo" class="spotify-card">
+                                <div class="play">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                            fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jz0ea5t0e8c8gd6zhxxvvrxr%2F1751288050_img_1.webp?st=2025-06-30T11%3A14%3A12Z&se=2025-07-06T12%3A14%3A12Z&sks=b&skt=2025-06-30T11%3A14%3A12Z&ske=2025-07-06T12%3A14%3A12Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=P0bavA9hcSYlGOCq%2B3XfKVkV0te7Fn4NDVyfREBxx%2Bg%3D&az=oaivgprodscus"
+                                    alt="Album Cover">
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div class="playbar">
+                        <div class="seekbar">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="abovebar">
+                            <div class="inf"></div>
+                            <div class="playbtn">
+                                <img id="pe" src="p.svg" alt="">
+                                <img id="play" src="pl.svg" alt="">
+                                <img id="ne" src="n.svg" alt="">
+                            </div>
+                            <div class="tvolume">
+                                <div class="time"></div>
+                                <div class="volume">
+                                    <img src="vol.svg" alt="">
+                                </div>
+                                <div class="range">
+                                    <input type="range" name="range">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script>
+
+            let currentsong = new Audio();
+
+            let songs;
+
+            let currfolder;
+
+            async function getsongs(folder) {
+                currfolder = folder;
+                let a = await fetch(`http://127.0.0.1:5500/${folder}/`)
+                let response = await a.text();
+
+                let div = document.createElement("div");
+                div.innerHTML = response;
+
+                let as = div.getElementsByTagName("a");
+                songs = [];
+
+                for (let index = 0; index < as.length; index++) {
+                    const element = as[index];
+                    if (element.href.endsWith(".mp3")) {
+                        songs.push(element.href.split(`/${folder}/`)[1]);
+                    }
+                }
+
+                let songul = document.querySelector(".song-list").getElementsByTagName("ul")[0]
+                songul.innerHTML = ""
+                for (const song of songs) {
+                    songul.innerHTML = songul.innerHTML + ` <li>     
+                            <img src="music.svg" alt="">
+                            
+                            <div class="info">
+                                
+                                <div class="song-name">${song.replaceAll("%20", " ")}</div>
+                                <div class="song-artist">Ibrahim</div>
+                                
+                        </div>    
+                            <img class="play2" src="pl.svg" alt="">
+                          </li>
+                           `
+                }
+
+                Array.from(document.querySelector(".song-list").getElementsByTagName("li")).forEach(e => {
+
+                    e.addEventListener("click", element => {
+                        console.log(e.querySelector(".info").firstElementChild.innerHTML);
+                        playm(e.querySelector(".info").firstElementChild.innerHTML)
+                    })
+
+                });
+            }
+
+            const playm = (track, pause = false) => {
+                // let audio = new Audio("/songs/" + track)
+                currentsong.src = `/${currfolder}/` + track
+                if (!pause) {
+                    currentsong.play()
+                    play.src = "stop.svg"
+                }
+                document.querySelector(".inf").innerHTML = decodeURI(track)
+                document.querySelector(".time").innerHTML = "00 : 00 / 00 : 00"
+
+            }
+
+
+            async function main() {
+
+
+
+                await getsongs("songs/bts");
+                playm(songs[0], true)
+                console.log("Found songs:", songs);
+                // display albums
+
+                play.addEventListener("click", () => {
+                    if (currentsong.paused) {
+                        currentsong.play()
+                        play.src = "pause.svg"
+                    }
+                    else {
+                        currentsong.pause()
+                        play.src = "pl.svg"
+                    }
+
+                });
+                function secondsToMinutesSeconds(seconds) {
+                    let mins = Math.floor(seconds / 60);
+                    let secs = Math.floor(seconds % 60);
+                    return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+                }
+
+                currentsong.addEventListener("timeupdate", () => {
+                    document.querySelector(".time").innerHTML =
+                        `${secondsToMinutesSeconds(currentsong.currentTime)} / ${secondsToMinutesSeconds(currentsong.duration)}`;
+                    document.querySelector(".circle").style.left = (currentsong.currentTime / currentsong.duration) * 100 + "%"
+                });
+                document.querySelector(".seekbar").addEventListener("click", e => {
+                    let per = (e.offsetX / e.target.getBoundingClientRect().width) * 100
+                    document.querySelector(".circle").style.left = per + "%"
+                    currentsong.currentTime = ((currentsong.duration) * per) / 100
+
+                })
+                pe.addEventListener("click", () => {
+                    let index = songs.indexOf(currentsong.src.split("/").slice(-1)[0])
+                    if (index - 1 >= 0) {
+                        playm(songs[index - 1])
+
+                    }
+                })
+
+                ne.addEventListener("click", () => {
+                    let index = songs.indexOf(currentsong.src.split("/").slice(-1)[0])
+                    if (index + 1 > length) {
+                        playm(songs[index + 1])
+
+                    }
+                })
+
+                document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
+                    console.log(e.target.value)
+                    currentsong.volume = parseInt(e.target.value) / 100
+
+                })
+
+                Array.from(document.getElementsByClassName("spotify-card")).forEach(e => {
+                    console.log(e)
+                    e.addEventListener("click", async item => {
+                        let songs = await getsongs(`songs/${item.currentTarget.dataset.folder}`)
+                        console.log(item)
+
+                    })
+                })
+            
+
+
+
+
+                
+
+            }
+            main()
+ 
+
+// 
+        </script>
+
+
+
+
+</body>
+
+</html>
